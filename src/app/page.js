@@ -1,6 +1,10 @@
+import Hero from "@/components/home/Hero";
+
 function page() {
   return (
-    <div className="w-[100%] h-[10vh]">page</div>
-  )
+    <div>
+      <Hero />
+    </div>
+  );
 }
-export default page
+export default page;
