@@ -96,8 +96,8 @@ export default function Navbar() {
               <Link
                 key={label}
                 href={href}
-                className={`nav-link text-[12.5px] font-medium tracking-[2px] no-underline px-3 py-1.5 rounded transition-colors duration-200 whitespace-nowrap
-                  ${isActive(href) ? "text-black/95 font-semibold" : "text-black/65 hover:text-black/95"}`}
+                className={`nav-link text-[13px] font-bold tracking-[2px] no-underline px-3 py-1.5 rounded transition-colors duration-200 whitespace-nowrap
+                  ${isActive(href) ? "text-black/95 font-bold" : "text-black/65 hover:text-black/95"}`}
               >
                 {label}
               </Link>
