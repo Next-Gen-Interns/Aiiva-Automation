@@ -111,7 +111,7 @@ export default function Navbar() {
             <div className="hidden lg:flex items-center gap-2 group backdrop-blur-[40px] bg-orange-500 px-[12px] py-[12px] rounded-[100px] transition-colors duration-200">
               
               <div className="flex flex-col leading-tight">
-                <span className="text-[13px] font-semibold text-white/65 no-underline group-hover:text-white transition-colors duration-200">
+                <span className="text-[13px] font-semibold text-white/70 no-underline group-hover:text-white transition-colors duration-200">
                   Call Now
                 </span>
               </div>
