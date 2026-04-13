@@ -9,10 +9,10 @@ export default function Footer() {
         <div className="w-[90%] mx-auto bg-[#f9f9f9] rounded-3xl p-8 md:p-12">
           
           {/* Top Section */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+          <div className="w-[100%] flex flex-wrap justify-between  gap-10">
             
             {/* Logo + Description */}
-            <div>
+            <div className="">
               <div className="flex items-center gap-2 mb-4">
                 <div className="flex">
                   <div className="w-5 h-5 border-2 border-orange-500 rounded-full"></div>
@@ -29,18 +29,16 @@ export default function Footer() {
   
               {/* Social Icons */}
               <div className="flex gap-3">
-  {[FaInstagram,CiFacebook,FaXTwitter,FaLinkedinIn].map((Icon, i) => (
-    <div
-      key={i}
-      className="w-10 h-10 flex items-center justify-center bg-gray-200 rounded-lg text-gray-600 hover:bg-gray-300 cursor-pointer transition"
-    >
-      <Icon size={18} />
-    </div>
-  ))}
-</div>
+                {[FaInstagram,CiFacebook,FaXTwitter,FaLinkedinIn].map((Icon, i) => (
+                  <div key={i} className="w-10 h-10 flex items-center justify-center bg-gray-200 rounded-lg text-gray-600 hover:bg-gray-300 cursor-pointer transition">
+                    <Icon size={18} />
+                  </div>
+                ))}
+              </div>
             </div>
-            {/* Company */}
-            <div>
+            <div className="flex flex-wrap gap-10 md:gap-30">
+              {/* Company */}
+            <div className="flex flex-col">
               <h3 className="text-orange-500 font-semibold mb-4">Company</h3>
               <ul className="space-y-2 text-gray-600">
                 <li>About Us</li>
@@ -72,6 +70,7 @@ export default function Footer() {
                 <li>Multiple Login</li>
                 <li>Flow Builder</li>
               </ul>
+            </div>
             </div>
           </div>
   
