@@ -1,5 +1,6 @@
 "use client";
 import { useCart } from "@/app/context/CartContext";
+import Image from "next/image";
 
 export default function ProductCard({ product }) {
   const { addToCart } = useCart();
@@ -7,7 +8,11 @@ export default function ProductCard({ product }) {
   return (
     <div className="w-[250px] border rounded-xl p-4 flex flex-col h-full">
       <div className="flex flex-col gap-3 flex-1">
-        <div className="w-full h-40 bg-gray-100 rounded-lg" />
+      <img
+  src={product.image}
+  alt={product.name}
+  className="rounded-md h-[180px]"
+/>
         <h3 className="font-semibold">{product.name}</h3>
         <p className="text-sm text-gray-500 flex-1 pb-2">
           {product.desc}

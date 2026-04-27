@@ -93,11 +93,11 @@ export default function Footer() {
             {/* Contact */}
             <div>
               <h3 className="text-orange-500 font-semibold mb-4">Get In Touch</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li><a href="tel:+919000006000">+919000006000</a></li>
-                  <li><a href="mailto:aiivaautomation@gmail.com">aiivaautomation@gmail.com</a></li>
+              <ul className="space-y-2 text-black/65">
+                <li><a href="tel:+919000006000" className="hover:text-black">+919000006000</a></li>
+                  <li><a href="mailto:aiivaautomation@gmail.com" className="hover:text-black">aiivaautomation@gmail.com</a></li>
                 <li>
-                <a href="https://www.google.com/maps/search/?api=1&query=5-9-30/1/24-25,+F-504,+The+Legend+Palace+Colony,+Himayathnagar,+Hyderabad,+Telangana+500063" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.google.com/maps/search/?api=1&query=5-9-30/1/24-25,+F-504,+The+Legend+Palace+Colony,+Himayathnagar,+Hyderabad,+Telangana+500063" target="_blank" rel="noopener noreferrer" className="hover:text-black">
                     <p className="max-w-sm">5-9-30/1/24-25, F-504, The Legend Palace Colony, New Mla Quarters, Hyderabad, Himayathnagar, Telangana, India, 500063</p>
                 </a>
                 </li>
