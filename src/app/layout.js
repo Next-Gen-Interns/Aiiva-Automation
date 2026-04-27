@@ -2,6 +2,9 @@ import { Geist, Geist_Mono, Arimo } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CartProvider from "@/app/context/CartContext";
+import CartDrawer from "@/components/CartDrawer";
+import Toast from "@/components/Toast";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,7 +19,7 @@ const geistMono = Geist_Mono({
 const arimo = Arimo({
   variable: "--font-arimo",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"], // 👈 add desired weights
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata = {
@@ -31,9 +34,13 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} ${arimo.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <CartProvider>
         <Header/>
+        <CartDrawer/>
         {children}
         <Footer/>
+        <Toast/>
+        </CartProvider>
       </body>
     </html>
   );
