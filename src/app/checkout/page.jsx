@@ -17,7 +17,7 @@ export default function Checkout() {
 
   const sendToWhatsApp = () => {
     const items = cart
-      .map((item) => `${item.name} x ${item.qty}`)
+      .map((item) => `${item.name}`)
       .join("\n");
 
     const message = `
@@ -46,7 +46,6 @@ ${items}
         {cart.map((item) => (
           <div key={item.id} className="flex justify-between py-2">
             <span>{item.name}</span>
-            <span>Qty: {item.qty}</span>
           </div>
         ))}
       </div>

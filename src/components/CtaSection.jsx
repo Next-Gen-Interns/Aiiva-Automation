@@ -1,10 +1,11 @@
 export default function CtaSection() {
     return (
       <section className="w-full bg-white py-12">
-        <div className="max-w-7xl mx-auto ">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-0">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch">
   
             {/* Left Image */}
+            {/* h-[300px] md:h-[400px] lg:h-[450px] xl:h-[500px] */}
             <div className="relative h-[500px] p-2 border overflow-hidden lg:h-auto">
             <div className="w-full h-full overflow-hidden">
               <img

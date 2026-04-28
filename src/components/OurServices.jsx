@@ -96,7 +96,7 @@ export default function OurServices() {
       </div>
 
       {/* ANIMATION */}
-      <style jsx>{`
+      <style>{`
         @keyframes scroll {
           0% {
             transform: translateX(0);
@@ -107,7 +107,7 @@ export default function OurServices() {
         }
 
         .animate-scroll {
-          animation: scroll 25s linear infinite;
+          animation: scroll 30s linear infinite;
           will-change: transform;
         }
       `}</style>

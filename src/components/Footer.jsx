@@ -28,7 +28,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-gray-100 py-10">
-      <div className="max-w-7xl mx-auto px-12 lg:px-0 rounded-3xl py-8 ">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-0 rounded-3xl py-8 ">
 
         {/* Top Section */}
         <div className="w-full flex flex-wrap justify-between gap-10">
